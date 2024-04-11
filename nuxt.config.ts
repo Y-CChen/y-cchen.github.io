@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { ycColors } from './tailwind.config';
 
 export default defineNuxtConfig({
   app: {
@@ -17,7 +18,7 @@ export default defineNuxtConfig({
         src: './logo.template.svg',
         dst: './public/logo.svg',
         options: {
-          color: '#9079b6',
+          color: ycColors['yc-primary']['600'],
           strokeWidth: '22px',
         },
         write: true,
@@ -25,5 +26,6 @@ export default defineNuxtConfig({
     ],
   },
   devtools: { enabled: true },
+  modules: ['@nuxt/ui'],
   telemetry: false,
 });

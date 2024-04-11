@@ -1,5 +1,8 @@
 {
-  "cSpell.words": ["y-cchen"],
+  "cSpell.words": [
+    "tailwindcss",
+    "y-cchen"
+  ],
   "i18n-ally.displayLanguage": "zh-TW",
   "i18n-ally.keystyle": "flat",
   "i18n-ally.localesPaths": "locales",
