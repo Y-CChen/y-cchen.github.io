@@ -4,6 +4,7 @@ import type { Config } from 'tailwindcss';
 export const ycColors = {
   // #9079b6
   'yc-primary': {
+    'DEFAULT': '#9079b6',
     '50': '#f8f7fb',
     '100': '#f1f0f7',
     '200': '#e5e3f1',
@@ -18,6 +19,7 @@ export const ycColors = {
   },
   // #67b5b7
   'yc-secondary': {
+    'DEFAULT': '#67b5b7',
     '50': '#f2f9f8',
     '100': '#ddf0ef',
     '200': '#bee3e3',

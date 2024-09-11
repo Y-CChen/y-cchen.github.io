@@ -18,7 +18,7 @@ export default defineNuxtConfig({
         src: './logo.template.svg',
         dst: './public/logo.svg',
         options: {
-          color: ycColors['yc-primary']['600'],
+          color: ycColors['yc-primary']['DEFAULT'],
           strokeWidth: '22px',
         },
         write: true,
