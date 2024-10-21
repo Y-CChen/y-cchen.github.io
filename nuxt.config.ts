@@ -27,5 +27,10 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   modules: ['@nuxt/ui'],
+  runtimeConfig: {
+    linePayChannelId: 'linePayChannelId',
+    linePayChannelSecretKey: 'linePayChannelSecretKey',
+    public: {},
+  },
   telemetry: false,
 });
