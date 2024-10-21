@@ -25,6 +25,7 @@ export default defineNuxtConfig({
       },
     ],
   },
+  compatibilityDate: '2024-10-21',
   devtools: { enabled: true },
   modules: ['@nuxt/ui'],
   runtimeConfig: {
