@@ -1,7 +1,16 @@
 {
-  "name": "nuxt-app",
+  "name": "y-cchen.github.io",
+  "version": "1.0.0",
+  "description": "https://y-cchen.github.io/",
+  "repository": "git@github.com:Y-CChen/Y-CChen.github.io.git",
+  "author": "Y-CChen <250f42mt@duck.com>",
+  "license": "MIT",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": "^18.18.0",
+    "yarn": "^1.22.0"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -11,7 +20,7 @@
   },
   "dependencies": {
     "nuxt": "^3.14.1592",
-    "vue": "latest",
-    "vue-router": "latest"
+    "vue": "^3.5.13",
+    "vue-router": "^4.4.5"
   }
 }
