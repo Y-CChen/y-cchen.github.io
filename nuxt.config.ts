@@ -9,13 +9,19 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: 'en' },
     },
   },
+
   compatibilityDate: '2024-11-01',
+
   devtools: { enabled: true },
+
+  modules: ['@nuxt/ui'],
+
   runtimeConfig: {
     public: {
       // automatically set at runtime using process.env.NUXT_PUBLIC_*
     },
     // automatically set at runtime using process.env.NUXT_*
   },
+
   telemetry: { enabled: false },
 });
