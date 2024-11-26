@@ -27,6 +27,11 @@ export default defineNuxtConfig({
 
   // modules configuration
 
+  // https://color-mode.nuxtjs.org/#configuration
+  colorMode: {
+    preference: 'light',
+  },
+
   // https://i18n.nuxtjs.org/docs/api/options
   i18n: {
     defaultLocale: 'zh-TW',
