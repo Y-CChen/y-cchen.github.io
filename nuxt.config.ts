@@ -14,7 +14,7 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
-  modules: ['@nuxt/ui'],
+  modules: ['@nuxt/ui', '@nuxtjs/i18n'],
 
   runtimeConfig: {
     public: {
@@ -24,4 +24,31 @@ export default defineNuxtConfig({
   },
 
   telemetry: { enabled: false },
+
+  // modules configuration
+
+  // https://i18n.nuxtjs.org/docs/api/options
+  i18n: {
+    defaultLocale: 'zh-TW',
+    detectBrowserLanguage: {
+      cookieSecure: true,
+    },
+    lazy: true,
+    locales: [
+      {
+        code: 'zh-TW',
+        file: 'zh-TW.json',
+        language: 'zh-TW',
+        name: '中文 (台灣)',
+      },
+      {
+        code: 'en',
+        file: 'en.json',
+        language: 'en',
+        name: 'English',
+      },
+    ],
+    strategy: 'no_prefix',
+    vueI18n: '~/i18n.config.ts',
+  },
 });
