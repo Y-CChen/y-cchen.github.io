@@ -19,6 +19,11 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       // automatically set at runtime using process.env.NUXT_PUBLIC_*
+      i18n: {
+        detectBrowserLanguage: {
+          cookieDomain: 'localhost',
+        },
+      },
     },
     // automatically set at runtime using process.env.NUXT_*
   },
@@ -37,6 +42,7 @@ export default defineNuxtConfig({
     defaultLocale: 'zh-TW',
     detectBrowserLanguage: {
       cookieSecure: true,
+      fallbackLocale: 'zh-TW',
     },
     lazy: true,
     locales: [
