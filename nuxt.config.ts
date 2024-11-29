@@ -1,3 +1,5 @@
+import { cColors } from './tailwind.config';
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
@@ -5,9 +7,24 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       title: 'Y-CChen',
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+      link: [{ rel: 'icon', type: 'image/svg', href: '/logo.svg' }],
       htmlAttrs: { lang: 'en' },
     },
+  },
+
+  build: {
+    templates: [
+      {
+        // logo
+        src: './logo.template.svg',
+        dst: './public/logo.svg',
+        options: {
+          color: cColors['c-primary']['DEFAULT'],
+          strokeWidth: '22px',
+        },
+        write: true,
+      },
+    ],
   },
 
   compatibilityDate: '2024-11-01',
