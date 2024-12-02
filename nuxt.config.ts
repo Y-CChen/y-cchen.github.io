@@ -31,7 +31,7 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
-  modules: ['@nuxt/ui', '@nuxtjs/i18n'],
+  modules: ['@nuxt/ui', '@nuxtjs/i18n', '@pinia/nuxt'],
 
   runtimeConfig: {
     public: {
@@ -79,4 +79,7 @@ export default defineNuxtConfig({
     strategy: 'no_prefix',
     vueI18n: '~/i18n.config.ts',
   },
+
+  // https://pinia.vuejs.org/ssr/nuxt.html
+  pinia: {},
 });
