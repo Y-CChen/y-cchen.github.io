@@ -14,7 +14,7 @@
       <tbody>
         <tr v-for="row in colorTable.rows">
           <td v-for="cell in row" class="p-1">
-            <div class="flex gap-1 items-center">
+            <div class="flex flex-row gap-1 items-center">
               <div :class="`w-4 h-4 ${cell.bg}`" />
               {{ cell.name }}
             </div>
@@ -31,11 +31,24 @@
         {{ locale.name }}
       </c-button>
     </div>
+    <c-divider>
+      <span class="title">screens</span>
+    </c-divider>
+    <table>
+      <tbody>
+        <tr v-for="row in screensTable.rows">
+          <td v-for="cell in row" class="p-1">
+            {{ cell }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 
 <script setup>
 const { locale: currentLocaleCode, locales, setLocale } = useI18n();
+const storeScreens = useStoreScreens();
 const colorTable = computed(() => ({
   headers: ['custom color', 'color'],
   rows: [
@@ -66,6 +79,12 @@ const currentLocale = computed(
     locales.value.find((locale) => locale.code === currentLocaleCode.value) ||
     {}
 );
+const screensTable = computed(() => ({
+  rows: [
+    ['screen', storeScreens.screen, ''],
+    ['desktop', storeScreens.desktop, storeScreens.isDesktop],
+  ],
+}));
 </script>
 
 <style lang="postcss" scoped>

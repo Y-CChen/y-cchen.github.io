@@ -41,6 +41,9 @@ export default <Partial<Config>>{
       colors: {
         ...cColors,
       },
+      screens: {
+        desktop: '768px',
+      },
     },
   },
 };
