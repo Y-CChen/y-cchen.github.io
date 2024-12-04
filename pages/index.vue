@@ -23,9 +23,9 @@
       </tbody>
     </table>
     <c-divider>
-      <span class="title">i18n ({{ $t('internationalization') }})</span>
+      <span class="title">i18n ({{ t('internationalization') }})</span>
     </c-divider>
-    <span>{{ currentLocale.name }}</span>
+    <span>{{ currentLocale?.name }}</span>
     <div class="flex gap-1">
       <c-button v-for="locale in locales" @click="setLocale(locale.code)">
         {{ locale.name }}
@@ -43,12 +43,17 @@
         </tr>
       </tbody>
     </table>
+    <c-divider>
+      <span class="title">user agent</span>
+    </c-divider>
+    <span>isDesktop: {{ userAgent.isDesktop }}</span>
   </div>
 </template>
 
-<script setup>
-const { locale: currentLocaleCode, locales, setLocale } = useI18n();
+<script setup lang="ts">
+const { locale: currentLocaleCode, locales, setLocale, t } = useI18n();
 const storeScreens = useStoreScreens();
+const userAgent = useStoreUserAgent();
 const colorTable = computed(() => ({
   headers: ['custom color', 'color'],
   rows: [
@@ -77,7 +82,7 @@ const colorTable = computed(() => ({
 const currentLocale = computed(
   () =>
     locales.value.find((locale) => locale.code === currentLocaleCode.value) ||
-    {}
+    null
 );
 const screensTable = computed(() => ({
   rows: [
