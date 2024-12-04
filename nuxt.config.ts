@@ -2,15 +2,7 @@ import { cColors } from './tailwind.config';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  app: {
-    head: {
-      charset: 'utf-8',
-      viewport: 'width=device-width, initial-scale=1',
-      title: 'Y-CChen',
-      link: [{ rel: 'icon', type: 'image/svg', href: '/logo.svg' }],
-      htmlAttrs: { lang: 'en' },
-    },
-  },
+  app: {},
 
   build: {
     templates: [
@@ -56,6 +48,7 @@ export default defineNuxtConfig({
 
   // https://i18n.nuxtjs.org/docs/api/options
   i18n: {
+    baseUrl: '/',
     defaultLocale: 'zh-TW',
     detectBrowserLanguage: {
       cookieSecure: true,
