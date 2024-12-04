@@ -1,3 +1,4 @@
+import { skipHydrate } from 'pinia';
 import tailwindConfig from '~/tailwind.config';
 
 function makeScreen(value: string): number {
@@ -9,7 +10,7 @@ export const useStoreScreens = defineStore('screens', () => {
     string,
     string
   >;
-  const screen = ref(0);
+  const screen = skipHydrate(ref(0));
   const desktop = computed(() => makeScreen(screensConfig?.desktop));
   const isDesktop = computed(() => screen.value > desktop.value);
   return { screen, desktop, isDesktop };
