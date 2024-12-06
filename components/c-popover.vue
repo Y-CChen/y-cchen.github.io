@@ -1,9 +1,12 @@
 <template>
-  <u-button>
+  <u-popover>
     <template #default>
       <slot name="default" />
     </template>
-  </u-button>
+    <template #panel>
+      <slot name="panel" />
+    </template>
+  </u-popover>
 </template>
 
 <script setup lang="ts"></script>

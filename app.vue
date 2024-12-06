@@ -1,5 +1,8 @@
 <template>
-  <nuxt-page />
+  <yc-header />
+  <div class="page-container">
+    <nuxt-page />
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -18,3 +21,9 @@ useHead(() => ({
   meta: [...(localeHead.value.meta || [])],
 }));
 </script>
+
+<style lang="postcss" scoped>
+.page-container {
+  @apply desktop:max-w-screen-2xl desktop:mx-auto;
+}
+</style>
