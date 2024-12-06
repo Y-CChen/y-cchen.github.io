@@ -39,6 +39,10 @@ export default defineNuxtConfig({
 
   telemetry: { enabled: false },
 
+  typescript: {
+    typeCheck: true,
+  },
+
   // modules configuration
 
   // https://color-mode.nuxtjs.org/#configuration
