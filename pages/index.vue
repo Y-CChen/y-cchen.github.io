@@ -69,12 +69,112 @@ const colorTable = computed(() => ({
     ],
     [
       {
-        name: 'c-secondary',
-        bg: 'bg-c-secondary',
+        name: 'c-primary-50',
+        bg: 'bg-c-primary-50',
       },
       {
-        name: 'gray-400',
-        bg: 'bg-gray-400',
+        name: 'primary-50',
+        bg: 'bg-primary-50',
+      },
+    ],
+    [
+      {
+        name: 'c-primary-100',
+        bg: 'bg-c-primary-100',
+      },
+      {
+        name: 'primary-100',
+        bg: 'bg-primary-100',
+      },
+    ],
+    [
+      {
+        name: 'c-primary-200',
+        bg: 'bg-c-primary-200',
+      },
+      {
+        name: 'primary-200',
+        bg: 'bg-primary-200',
+      },
+    ],
+    [
+      {
+        name: 'c-primary-300',
+        bg: 'bg-c-primary-300',
+      },
+      {
+        name: 'primary-300',
+        bg: 'bg-primary-300',
+      },
+    ],
+    [
+      {
+        name: 'c-primary-400',
+        bg: 'bg-c-primary-400',
+      },
+      {
+        name: 'primary-400',
+        bg: 'bg-primary-400',
+      },
+    ],
+    [
+      {
+        name: 'c-primary-500',
+        bg: 'bg-c-primary-500',
+      },
+      {
+        name: 'primary-500',
+        bg: 'bg-primary-500',
+      },
+    ],
+    [
+      {
+        name: 'c-primary-600',
+        bg: 'bg-c-primary-600',
+      },
+      {
+        name: 'primary-600',
+        bg: 'bg-primary-600',
+      },
+    ],
+    [
+      {
+        name: 'c-primary-700',
+        bg: 'bg-c-primary-700',
+      },
+      {
+        name: 'primary-700',
+        bg: 'bg-primary-700',
+      },
+    ],
+    [
+      {
+        name: 'c-primary-800',
+        bg: 'bg-c-primary-800',
+      },
+      {
+        name: 'primary-800',
+        bg: 'bg-primary-800',
+      },
+    ],
+    [
+      {
+        name: 'c-primary-900',
+        bg: 'bg-c-primary-900',
+      },
+      {
+        name: 'primary-900',
+        bg: 'bg-primary-900',
+      },
+    ],
+    [
+      {
+        name: 'c-primary-950',
+        bg: 'bg-c-primary-950',
+      },
+      {
+        name: 'primary-950',
+        bg: 'bg-primary-950',
       },
     ],
   ],

@@ -3,6 +3,5 @@
 export default defineAppConfig({
   ui: {
     primary: 'c-primary',
-    gray: 'c-secondary',
   },
 });
